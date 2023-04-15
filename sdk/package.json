@@ -1,0 +1,18 @@
+{
+  "name": "sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@safe-global/api-kit": "^1.0.1",
+    "@safe-global/protocol-kit": "^0.1.1",
+    "@safe-global/safe-core-sdk-types": "^1.10.1",
+    "dotenv": "^16.0.3",
+    "ethers": "5.7.2",
+    "typescript": "^5.0.4"
+  }
+}
