@@ -9,17 +9,12 @@ import {
   Text,
   useToast,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import { PROTECTOR } from "./app";
 import ABI from "../utils/ABI";
-import {
-  useAccount,
-  useContractRead,
-  useContractReads,
-  useSigner,
-} from "wagmi";
+import { useAccount, useContractReads, useSigner } from "wagmi";
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
-import { doc, onSnapshot, setDoc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../utils/firebase";
 import { prepareWriteContract, writeContract } from "@wagmi/core";
 import { SafeVersion } from "@safe-global/safe-core-sdk-types";

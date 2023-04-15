@@ -1,30 +1,15 @@
 import React, { useCallback, useEffect, useState } from "react";
 ("use client");
 import { Web3Button, Web3NetworkSwitch } from "@web3modal/react";
-import { useAccount, useContractRead, useNetwork, useSigner } from "wagmi";
+import { useAccount, useContractRead, useNetwork } from "wagmi";
 import ABI from "../utils/ABI";
 import { Box, Button, Flex, Spinner, Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import { prepareWriteContract, writeContract } from "@wagmi/core";
 import { useToast } from "@chakra-ui/react";
-import { BigNumber, utils } from "ethers";
-import { EthersAdapter, SafeFactory } from "@safe-global/protocol-kit";
-import { ethers } from "ethers";
-import { SafeVersion } from "@safe-global/safe-core-sdk-types";
-import { getSafeContractDeployment } from "@safe-global/protocol-kit/dist/src/contracts/safeDeploymentContracts";
+import { utils } from "ethers";
 import { db } from "../utils/firebase";
-import {
-  addDoc,
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  onSnapshot,
-  or,
-  query,
-  setDoc,
-  where,
-} from "firebase/firestore";
+import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import Buddies, { IVaults } from "./Buddies";
 
 const IDKitWidget = dynamic(

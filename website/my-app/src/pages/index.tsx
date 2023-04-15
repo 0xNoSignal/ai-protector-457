@@ -1,6 +1,6 @@
 import { Web3Button } from "@web3modal/react";
 import { useEffect, useRef } from "react";
-import { Gradient } from "./Gradient.js";
+import { Gradient } from "../components/Gradient.js";
 import { useAccount } from "wagmi";
 import { App } from "../components/app";
 const gradient = new Gradient() as any;

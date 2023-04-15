@@ -12,6 +12,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { polygon, polygonMumbai } from "wagmi/chains";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import Head from "next/head";
 
 const chains = [polygon];
 
@@ -68,6 +69,13 @@ const ethereumClient = new EthereumClient(wagmiClient, chains);
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <title>AI Protector 1.5.1</title>
+        <meta
+          name="description"
+          content="Don't let GPT fool you. Only invest with real people"
+        />
+      </Head>
       <CacheProvider>
         <ChakraProvider theme={theme}>
           <WagmiConfig client={wagmiClient}>
