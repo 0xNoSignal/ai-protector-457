@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.18",
+    "@chakra-ui/next-js": "^2.1.2",
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@safe-global/api-kit": "^1.0.1",
+    "@safe-global/protocol-kit": "^0.1.1",
+    "@safe-global/safe-core-sdk-types": "^1.10.1",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
+    "@types/react-dom": "18.0.11",
+    "@worldcoin/idkit": "^0.4.9",
+    "dotenv": "^16.0.3",
+    "ethers": "5.7.2",
+    "firebase": "9.13.0",
+    "framer-motion": "^10.12.2",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4",
+    "@web3modal/ethereum": "^2.3.0",
+    "@web3modal/react": "^2.3.0",
+    "wagmi": "^0.12.10"
+  }
+}
